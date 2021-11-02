@@ -1,0 +1,9 @@
+site_name: napari-geojson
+site_description: A Napari plugin for reading GeoJSON shapes.
+site_author: Vlad Popovici
+
+theme: readthedocs
+
+
+pages:
+- Home: index.md
