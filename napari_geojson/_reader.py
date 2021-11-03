@@ -88,7 +88,7 @@ def geojson_reader(path):
                 layer_shape_edge_color.append(defaults['shape_edge_color'])
                 layer_shape_face_color.append(defaults['shape_face_color'])
 
-                layer_data.append(geom2xy(shape))
+                layer_data.append(geom2xy(shape)[:,(1,0)])
 
         layers.append(
             (layer_data,
