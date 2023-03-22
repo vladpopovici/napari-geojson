@@ -7,7 +7,7 @@
 [![codecov](https://codecov.io/gh/vladpopovici/napari-geojson/branch/main/graph/badge.svg)](https://codecov.io/gh/vladpopovici/napari-geojson)
 [![napari hub](https://img.shields.io/endpoint?url=https://api.napari-hub.org/shields/napari-geojson)](https://napari-hub.org/plugins/napari-geojson)
 
-A Napari plugin for reading GeoJSON shapes.
+A Napari plugin for reading GeoJSON shapes. Currently, it handles only POLYGONs, other shapes might be added later.
 
 ----------------------------------
 

@@ -55,8 +55,8 @@ def geojson_reader(path):
     paths = [path] if isinstance(path, str) else path
     layers = []
 
-    defaults = dict(shape_edge_width=100, shape_edge_color='red', shape_face_color='blue', opacity=0.25,
-                    blending='opaque')
+    defaults = dict(shape_edge_width=100, shape_edge_color='red', shape_face_color='green', opacity=0.25,
+                    blending='translucent')
 
     for pth in paths:
         # for each GeoJSON file create a new layer (Shape)
@@ -73,7 +73,8 @@ def geojson_reader(path):
                 shape = shg.shape(obj['geometry'])
                 if not shape.is_valid:
                     # TODO: maybe raise an exception?
-                    continue
+                    # continue
+                    pass
                 if shape.geom_type.lower() == 'point':
                     pass
                 elif shape.geom_type.lower() == 'linestring':
